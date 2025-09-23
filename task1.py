@@ -1,0 +1,58 @@
+
+name=input("enter your name=")
+print("enter your dob")
+d=int(input("enter date="))
+m=int(input("enter month="))
+y=int(input("enter year="))
+age=int(input("enter your age="))
+clas=input("enter your class=")
+div=input("enter your division=")
+sub1=input("enter your sub 1=")
+sm1=int(input("enter your sub1 marks="))
+sub2=input("enter your sub 2=")
+sm2=int(input("enter your sub2 marks="))
+sub3=input("enter your sub 3=")
+sm3=int(input("enter your sub3 marks="))
+sub4=input("enter your sub 4=")
+sm4=int(input("enter your sub4 marks="))
+sub5=input("enter your sub 5=")
+sm5=int(input("enter your sub5 marks="))
+total=sm1+sm2+sm3+sm4+sm5
+print("total is", total)
+x=total/500 
+percentage=x*100
+
+print ("Marksheet".center(40,' ' ))
+print("student name=",name)
+print("*****************************************************************")
+print("DOB =",end=" ")
+print(d,m,y,sep='/' , end="                     ")
+print("AGE=",age)
+print("*****************************************************************")
+print("Class=",clas, end="                         ")
+print("Div=",div)
+print("*****************************************************************")
+print("Subject",end="                 ")
+print("Marks")
+print(sub1,end="                        ")
+print(sm1)
+print(sub2,end="                        ")
+print(sm2)
+print(sub3,end="                        ")
+print(sm3)
+print(sub4,end="                        ")
+print(sm4)
+print(sub5,end="                        ")
+print(sm5)
+print("_____________________________________________________________________")
+print("Percentage=",percentage,end="                  ")
+print("total=",total)
+
+if percentage>=80:
+    print("Grade is A")
+elif percentage>=60:
+    print("Grade is B")
+elif percentage>=40:
+    print("Grade is C")
+else:
+    print("grade is D")
